@@ -8,7 +8,7 @@ let firstName = "kevin";
 
 switch (firstName) {
   case "Axcel":
-    console.log("hey you have a nice car");
+    // console.log("hey you have a nice car");
     break;
   case "Isaac":
     // console.log("you car is not nice");
@@ -26,9 +26,34 @@ for(step = 0; step<arr.length; step++){
   // console.log(arr[step]);
 }
 
-console.log(sum);
+// console.log(sum);
 
 
 let array = [2,3,[37,"kevin"],35,[35,[365,44,[456,473]]]];
 
-console.log(array[4][1][2][1]);
+// console.log(array[4][1][2][1]);
+
+
+const numbers = [10, 47, 3, 67, 6, 100];
+
+let biggest = numbers[0];
+
+for (let index = 0; index < numbers.length; index++) {
+  if (numbers[index] > biggest) {
+    biggest = numbers[index];
+  }
+}
+
+console.log(biggest);
+
+let secondBiggest = numbers[0];
+
+for (let index = 0; index < numbers.length; index++) {
+  let current = numbers[index];
+
+  if (current > biggest) {
+    secondBiggest = biggest;
+  }
+}
+
+console.log(secondBiggest);
