@@ -2,9 +2,18 @@
 let dealerName = "Karl";
 let costUgx = 15000;
 
+// 1st solution
 let isValidRecord = (dealerName.length >= 2) && (costUgx >= 10000);
 
 console.log(isValidRecord);
+
+// 2nd solution
+if (dealerName.length >= 2 && costUgx >= 10000) {
+  console.log("Valid record");
+} else {
+  console.log("Invalid record");
+}
+
 
 // Date Logging 
 
