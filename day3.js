@@ -70,11 +70,7 @@ let year = 1923
 // timestamp from the EPOC time 1 January 2025
 // console.log(date.getTime());
 
-let purchaseDate = new Date("2025-11-15");
-let currentDate = new Date();
 
-let passedTime = currentDate.getTime()- purchaseDate.getTime();
-let passedTimeDif = passedTime / (1000 * 60 *60);
 
 // console.log(passedTime);
 // console.log(passedTimeDif);
