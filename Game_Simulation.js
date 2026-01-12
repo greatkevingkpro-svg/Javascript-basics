@@ -22,8 +22,13 @@ class GameSimulation {
     };
 
     console.log(`Downloading ${this.gameName}...`);
+
+    // this code increase the progress by 10% each time
     for (let i = 0; i <= 100; i += 10) {
+      // this code calls the function that draws the progress bar
       showProgress(i, "Please wait...");
+
+      // this pause the code before the next update
       await new Promise(resolve => setTimeout(resolve, 200));
       this.downloadProgress = i;
     }
@@ -43,8 +48,13 @@ class GameSimulation {
     };
 
     console.log(`Loading ${this.gameName}...`);
+
+    // this code increase the progress by 1% each time
     for (let i = 0; i <= 100; i++) {
+      // this code calls the function that draws the progress bar
       showProgress(i, "Please wait...");
+
+      // this pause the code before the next update
       await new Promise(resolve => setTimeout(resolve, 50));
       this.loadProgress = i;
     }
