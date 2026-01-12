@@ -11,10 +11,10 @@ switch (firstName) {
     // console.log("hey you have a nice car");
     break;
   case "Isaac":
-    // console.log("you car is not nice");
+    console.log("you car is not nice");
     break;
   default:
-    // console.log("try again");
+    console.log("try again");
 
 }
 
