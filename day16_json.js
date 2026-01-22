@@ -32,3 +32,19 @@ let dealerArray = '["dealer1", "dealer2","dealer3"]';
 let dealerObject = JSON.parse(dealerArray);
 console.log(dealerObject);
 
+// fetch('https://fakestoreapi.com/products/1')
+
+// fetch("https://fakestoreapi.com/products/1",{
+//   method: "POST",
+//   headers:{
+//     "Content-Type":"appliction/json"
+//   },
+//   body:stringCreditSale
+// })
+// .then((response)=>{
+//   console.log(response);
+//   return response.json;
+// })
+// .then((data)=>{
+//   console.log(`the data is here`, data)
+// })
