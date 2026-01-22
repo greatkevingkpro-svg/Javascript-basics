@@ -31,6 +31,9 @@ function guessMode(guessResult) {
     score.losses += 1;
   }
 
+  document.querySelector('.js-guess')
+    .innerHTML = `You chose: ${guessResult}`
+
   alert(`your guess was ${guessResult}. The flipping result was ${result}. the outcome is ${outCome}.
 wins: ${score.wins}, losses: ${score.losses}`)
 }
