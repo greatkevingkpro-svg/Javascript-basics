@@ -12,9 +12,13 @@
     
     <button onclick="
     cartQuantity ++;
-    console.log(`cart quantity: ${cartQuantity}`);
+    
     if (cartQuantity >= 10) {
+      cartQuantity = 'full';
+      // console.log(cartQuantity);
       alert(`the cart is full`);
+    } else {
+      console.log(`cart quantity: ${cartQuantity}`);
     }
     ">
       Add to Cart
